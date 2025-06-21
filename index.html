@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME SELECTOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume selector</h1>
+        <input type="file" id="resumeInput" multiple accept="application/pdf">
+        <input type="text" id="keywordInput" placeholder="Enter keyword...">
+        <button onclick="searchResume()">search</button>
+        <ul id="result"></ul>
+        <p id="noresult"style="display: none;"> no matching result found</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
